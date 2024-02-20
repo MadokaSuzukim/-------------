@@ -1,0 +1,56 @@
+/* ここから下に記載していく */
+.container {
+    width: 1200px; /* コンテナの幅を1200pxに設定 */
+    margin: 0 auto; /* 左右のマージンを自動で調整し、コンテナを中央に配置 */
+    /* 必要に応じてその他のスタイルを追加 */
+
+
+    /* ヘッダースタイル */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header__logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav li {
+    margin-left: 20px;
+}
+
+.header__nav a {
+    color: #fff;
+    text-decoration: none;
+}
+/* フッタースタイル */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.footer li {
+    display: inline; /* リストを横並びにする */
+    margin: 0 10px;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;}}

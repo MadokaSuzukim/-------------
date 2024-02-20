@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+.container {
+    /* display:flex を設定してみよう */
+    /* df タブキー */
+    display: flex;justify-content: center;
+    /* jccタブキー */
+    /* justify-content: ; */
+    /* flex-end */
+    /* justify-content: start; */
+    /* space-between */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */ 
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* アイテムがコンテナの幅を超えたら折り返す */
+    gap: 20px; /* アイテム間の隙間 */
+    justify-content: center; /* アイテムを中央揃えに */
+  }
+  
+  .item, .card__content {
+    background-color: #f0f0f0; /* バックグラウンドカラー */
+    border: 1px solid #ddd; /* ボーダー */
+    padding: 20px; /* パディング */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* シャドウを追加 */
+  }
+  
+  .item {
+    flex-basis: calc(33.333% - 20px); /* 3列レイアウトの基本幅を計算し、gapと合わせて調整 */
+  }
+  
+  .card__content {
+    flex-basis: 100%; /* NEWSセクションは幅いっぱいに広がるように */
+  }
+
+  .about-images {
+    display: flex; /* Flexboxを有効化 */
+    justify-content:space-between; /* 中央寄せ */
+    align-items: center; /* アイテムを垂直方向の中央に配置 */
+    flex-wrap: wrap; /* 必要に応じてアイテムを折り返し */
+  }
+  
+  .about-images img {
+    flex: 0 0 auto; /* 画像が伸縮せず、元のサイズを保持 */
+    margin: 10%; /* 画像間のマージン */
+    max-width: calc(33.333% - 20px); /* 画像の最大幅を計算し、3つ並べた時の幅を指定 */
+    height: auto; /* 画像の高さを自動調整 */
+  }
+
+  section {
+    margin: 42px 0;
+    padding: 18px 0;
+    border-top: 1px #444 solid;
+    border-bottom: 1px #444 solid;
+    background-color: white;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 860px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    border: 1px #242424 solid;
+    align-items: center;
+}
+
+.card__content {
+    margin: auto;
+}
+.card__content {
+    display: flex; /* Flexboxを有効化 */
+    flex-direction: column; /* 記事を縦方向に並べる */
+    align-items: center; /* 記事を中央揃えに */
+}
+
+.news-item {
+    margin: 10px 0; /* 記事間のマージンを設定 */
+    padding: 10px; /* 記事のパディングを設定 */
+    border-bottom: 1px solid #ccc; /* 記事の下に境界線を追加 */
+    width: 100%; /* 記事の幅をコンテナの幅に合わせる */
+}e
+.is-large {
+    height: 200px;
+}
+
+.is-small {
+    height: 100px;
+}
+
+h1 {
+    color: blue;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        color: red;
+    }
+}

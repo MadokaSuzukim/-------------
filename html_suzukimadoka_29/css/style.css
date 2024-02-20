@@ -1,0 +1,554 @@
+/* 基本スタイル */
+.container {
+  width: 1200px; /* コンテナの幅を1200pxに設定 */
+  margin: 0 auto; /* 左右のマージンを自動で調整し、コンテナを中央に配置 */
+}
+
+/* h1,h2,p 設定 */
+h1, p {
+  text-align: center;
+  padding: 20px; /* paddingを調整 */
+  margin: 0 auto; /* 上下のマージンを0に、左右のマージンを自動調整 */
+  font-size: 16px; /* テキストのサイズを16pxに設定 */
+}
+
+/* h3 英語タイトル24px */
+h3 {
+  color: red;
+  font-weight: bold; /* テキストを太文字にする */
+  font-size: 24px; /* テキストのサイズを24pxに設定 */
+  margin: 60px auto 30px; /* 上のマージンを60px、左右のマージンを自動、下のマージンを30pxに設定 */
+  width: fit-content;
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* h4 日本語タイトル 18px */
+h4 {
+  color: black;
+  font-size: 18px; /* テキストのサイズを18pxに設定 */
+  margin: 30px auto 60px; /* 上のマージンを60px、左右のマージンを自動、下のマージンを30pxに設定 */
+  width: fit-content;
+  margin-left: auto; /* 左マージンを自動調整 */
+  margin-right: auto; /* 右マージンを自動調整 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* course部分 見出し */
+h5{
+  font-size: 24px; /* テキストのサイズを24pxに設定 */
+  margin: 120px auto 40px; /* 上のマージンを60px、左右のマージンを自動、下のマージンを30pxに設定 */
+  width: fit-content;
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* 左50px開ける */
+h6 {
+  margin-bottom: 120px;
+  margin-left: 50px;
+  width: fit-content;
+  text-align: center; /* テキストを中央揃え */
+}
+
+/* 下80px開ける */
+h2 {
+  font-size: 16px; /* テキストのサイズを16pxに設定 */
+  margin: 20px auto 80px; /* 上のマージンを60px、左右のマージンを自動、下のマージンを80pxに設定 */
+  width: fit-content;
+  text-align: center; /* テキストを中央揃え */
+}
+
+.contact {
+  font-weight: bold; /* テキストを太文字にする */
+}
+ 
+
+/* ヘッダースタイル */
+.header {
+  display: flex;/* flexBoxを使う
+  justify-content: space-between   /*真ん中に寄せる 
+  width: 100%; /* ヘッダーの幅をビューポートの幅全体に設定 */
+  background-color: white; /* 背景色 */
+  color: #fff; /* テキスト色 */
+  text-align: center; /* テキストを中央揃えに */
+  align-items: center;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header__nav li {
+  margin: 50px;
+
+}
+
+.header__nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
+
+/* 画像オンテキスト */
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url('../img/2.jpg'); /* 相対パスを使用 */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column; /* テキストを縦に並べる */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-overlay .overlay-title {
+  font-weight: bold; /* テキストを太文字にする */
+  margin: 5px 0; /* 余白の調整 */
+  font-size: 60px; /* タイトルのフォントサイズ */
+  font-weight: bold; /* フォントの太さ */
+}
+
+.image-overlay .overlay-subtitle {
+  margin: 5px 0; /* 余白の調整 */
+  font-size: 36px; /* サブタイトルのフォントサイズ */
+}
+
+/* 訂正中 */
+/* .course { */
+  /* display: flex; Flexboxを有効にする */
+  /* align-items: center; アイテムを垂直方向の中央に揃える */
+  /* justify-content: space-between; アイテム間にスペースを設ける */
+  /* padding: 20px; コンテナの内側にパディングを設定 */
+/* } */
+
+/* .image { */
+  /* flex: 1; 画像が利用可能なスペースを埋めるようにする */
+  /* max-width: 50%; 画像の最大幅を指定 */
+/* } */
+
+/* .text { */
+  /* flex: 1; テキストが利用可能なスペースを埋めるようにする */
+  /* max-width: 50%; テキストの最大幅を指定 */
+  /* padding: 0 20px; テキストの左右にパディングを設定 */
+/* } */
+
+.container {
+  display: flex; /* Flexboxを有効にする */
+  flex-direction: row-reverse; /* アイテムの順序を逆にする */
+  align-items: center; /* アイテムを垂直方向の中央に揃える */
+  justify-content: space-between; /* アイテム間にスペースを設ける */
+  padding: 20px; /* コンテナの内側にパディングを設定 */
+}
+
+
+
+
+/* Flexboxコンテナの基本スタイル */
+.image-text-container {
+  display: flex;
+  align-items: center; /* アイテムを垂直方向の中央に揃える */
+}
+
+/* 画像を左側に配置（デフォルト） */
+.image-text-container img {
+  flex: 1; /* 画像に対して利用可能な余白を均等に使わせる */
+  max-width: 50%; /* コンテナの50%の幅に制限 */
+  height: auto; /* 高さを自動調整 */
+  object-fit: cover; /* 画像のアスペクト比を保持しつつ、コンテナに合わせて調整 */
+  display: block;
+}
+
+/* テキストコンテンツのスタイリング */
+.text-content {
+  flex: 1; /* テキストコンテンツに対して利用可能な余白を均等に使わせる */
+  max-width: 50%; /* コンテナの50%の幅に制限 */
+}
+
+/* 真ん中の画像だけ右に寄せるコンテナ */
+.right-aligned-container {
+  justify-content: space-between; /* アイテムをコンテナの両端に寄せる */
+  flex-direction: row-reverse; /* アイテムの順序を逆にして画像を右に配置 */
+}
+
+/* 画像スタイル */
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-images img {
+  margin: 0px;
+  max-width: calc(25% - 20px); /* 4枚の画像が横並びになるように幅を指定 */
+  height: auto;
+}
+/* ここからがNEWS */
+/* NEWS */
+.card__content {
+  display: flex;
+  flex-wrap: wrap; /* コンテンツが多い場合は折り返す */
+  justify-content: space-between; /* アイテム間に均等なスペースを設置 */
+  align-items: flex-start; /* アイテムを上端で揃える */
+}
+
+.news-item {
+  flex: 1; /* 各ニュースアイテムが利用可能なスペースを均等に使用 */
+  margin: 10px; /* アイテム間のマージン */
+  max-width: calc(33.333% - 20px); /* 3列レイアウトの場合の幅指定（マージンを考慮） */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 影を追加 */
+  padding: 10px; /* パディング */
+}
+/* フォバーアクションカーソルを合わせるとグレーに変わる */
+.news-item:hover {
+  background-color: #f0f0f0; /* マウスオーバー時の背景色 */
+}
+
+.news-item img {
+  width: 100%; /* コンテナの幅に合わせて画像を拡大/縮小 */
+  height: 200px; /* 画像の高さを固定 */
+  object-fit: cover; /* 画像の比率を保ちつつ、指定した高さに合わせてカバー */
+  margin-bottom: 0px; /* 画像とテキストの間のマージン */
+}
+/* ここまでがNEWSフィールド */
+
+/* ここからmoreボタン */
+/* more ボタン *//* ボタンを中央に配置するためのコンテナ */
+.button-container {
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  height: 100vh; /* コンテナの高さをビューポートの高さに合わせる */
+}
+.image-text-container {
+  display: flex;
+  align-items: center; /* アイテムを垂直方向の中央に揃える */
+  justify-content: space-between; /* 左のアイテムと右のアイテムの間にスペースを作る */
+  text-align: left; /* テキストを左揃え */
+}
+
+.image-text-container img {
+  width: auto; /* 画像の自然な幅を使用 */
+  height: auto; /* 画像の自然な高さを使用 */
+  order: 2; /* Flexbox アイテムの順序を最後にする */
+}
+
+.text-content {
+  order: 1; /* テキストを画像より先に配置 */}
+
+
+
+/* ボタンのスタイル */
+/* コンテナを追加 */
+.button-container {
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+/* Moreボタンスタイル */
+.more-button {
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: block; /* ブロックレベル要素として扱う */
+  margin: 20px auto; /* 上下のマージンを20px、左右のマージンを自動で中央揃え */
+}
+  
+.more-button:hover {
+  background-color: #0056b3; /* ホバー時の背景色を少し暗くする */
+}
+
+/* youtube */
+.video-container {
+  text-align: center;
+}
+
+.video-container iframe {
+  margin: auto;
+  display: block;
+}
+
+/* 所在地 */
+.kaisha {
+  width: 80%; /* テーブルの幅を親要素の100%に設定 */
+  max-width: 1200px; /* テーブルの最大幅を設定 */
+  margin: auto; /* テーブルを中央揃えに */
+}
+
+.kaisha th,
+.kaisha td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left; /* セルのテキストを左揃えに */
+}
+
+.kaisha th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+/* 特定の列の幅を調整 */
+.kaisha th:first-child,
+.kaisha td:first-child {
+  width: 30%; /* 最初の列（例: ラベル）の幅を30%に設定 */
+}
+
+.kaisha th:nth-child(2),
+.kaisha td:nth-child(2) {
+  width: 70%; /* 2番目の列（例: 値）の幅を70%に設定 */
+}
+
+  @media screen and (max-width: 767px) {
+  .kaisha,
+  .kaisha tr,
+  .kaisha td,
+  .kaisha th {display:block;}
+  .kaisha th {width:auto;}
+  }
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-row {
+  display: flex;
+  justify-content: start; /* 左から順に並べる */
+  align-items: center; /* 縦方向の中心に揃える */
+}
+
+.info-label, .info-detail {
+  margin-right: 5px; /* 項目間の隙間を設定 */
+}
+
+.info-label {
+  width: 120px; /* ラベルの幅を固定 */
+  text-align: right; /* ラベルのテキストを右揃えに */
+}
+
+.info-detail {
+  flex-grow: 1; /* 情報部分が残りのスペースを埋めるように拡大 */
+  text-align: left; /* 情報のテキストを左揃えに */
+}
+
+/* CONTACTフォーム全体のフォームセクションのスタイリング */
+section.contact {
+  max-width: 800px; /* フォームの最大幅を設定 */
+  margin: 0 auto; /* 中央揃え */
+  padding: 20px;
+}
+
+/* テーブルのスタイリング */
+form table {
+  width: 100%; /* テーブルの幅をフォームの幅に合わせる */
+  border-collapse: collapse; /* セルの境界線を1本にまとめる */
+  margin-top: 20px;
+}
+
+/* テーブルセルのスタイリング */
+form td {
+  padding: 10px; /* セル内のパディング */
+  vertical-align: top; /* 上揃え */
+}
+
+/* ラベルのスタイリング */
+form label {
+  display: block; /* ブロック要素として表示 */
+  margin-bottom: 5px; /* ラベルと入力フィールドの間隔 */
+}
+
+/* 入力フィールドのスタイリング */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%; /* 幅を100%に設定 */
+  padding: 8px; /* パディング */
+  margin-bottom: 10px; /* 下のマージン */
+  border: 1px solid #ccc; /* 境界線 */
+  border-radius: 4px; /* 角丸 */
+}
+
+/* チェックボックスのラベルスタイリング */
+form label {
+  margin-right: 15px; /* ラベル間のスペース */
+}
+/* チェックボックスとラベルのスタイリング */
+form div {
+  margin-bottom: 10px; /* マージンで要素間のスペースを作る */
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px; /* チェックボックスとテキストの間隔 */
+}
+
+form label {
+  display: inline-block; /* ラベルをインラインブロック要素として表示 */
+}
+
+/* ボタンのスタイリング */
+form button {
+  background-color: #007bff; /* 背景色 */
+  color: white; /* 文字色 */
+  padding: 10px 20px; /* パディング */
+  border: none; /* 境界線なし */
+  border-radius: 5px; /* 角丸 */
+  cursor: pointer; /* カーソル */
+}
+
+/* ボタンのホバー効果 */
+form button:hover {
+  background-color: #0056b3; /* ホバー時の背景色 */
+}
+
+/* ボタンを中央に配置 */
+form td[colspan="2"] {
+  text-align: center;
+}
+
+
+/* レスポンシブデザイン対応 */
+@media (max-width: 768px) {
+  section.contact, section {
+    width: 90%; /* スクリーン幅が768px以下の場合、セクションの幅を90%にする */
+    margin: 20px auto; /* 上下のマージンを20pxにして中央揃え */
+  }
+}
+
+
+
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+}
+
+legend {
+  padding: 0;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* フッタースタイル */
+.footer {
+  width: 100%; /* フッターの幅をビューポートの幅全体に設定 */
+  padding: 20px;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  margin: 0 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
